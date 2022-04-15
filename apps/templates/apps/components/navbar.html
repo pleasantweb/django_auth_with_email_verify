@@ -1,0 +1,13 @@
+<nav>
+    <div class="logo">
+        <h1><a href="/">Django Auth</a></h1>
+    </div>
+   <ul>
+       {% if request.user.is_authenticated %}
+       <li><a href="/accounts/logout">logout</a></li>
+      {% else %}
+       <li><a href="/accounts/login">login</a></li>
+       <li><a href="/accounts/signup">signup</a></li>
+       {% endif %}
+   </ul>
+</nav>

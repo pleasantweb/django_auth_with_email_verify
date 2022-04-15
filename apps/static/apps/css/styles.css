@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.container nav {
+  width: inherit;
+  height: 70px;
+  -webkit-box-shadow: 0px 10px 20px #2b92e4;
+          box-shadow: 0px 10px 20px #2b92e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.container nav .logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container nav .logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.container nav .logo h1 a {
+  text-decoration: none;
+  color: #2b92e4;
+}
+
+.container nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav ul li {
+  margin-right: 30px;
+  font-size: 1.3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.container nav ul li a:hover {
+  color: #2b92e4;
+}
+
+.container section.home_section {
+  width: inherit;
+  height: calc(100vh - 70px);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container section.home_section img {
+  width: inherit;
+  height: auto;
+  z-index: 1;
+}
+
+.container section.home_section .text_overlay {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 40px;
+  padding: 0 40px;
+  border-radius: 20px;
+  border: 2px solid #2b92e4;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container section.home_section .text_overlay a {
+  color: #2b92e4;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.home_section .text_overlay:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container section.login_page, .container section.signup_page {
+  width: inherit;
+  height: calc(100vh - 70px);
+  position: relative;
+}
+
+.container section.login_page .form_page, .container section.signup_page .form_page {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container section.login_page .form_page h1.message, .container section.signup_page .form_page h1.message {
+  font-size: 2.5rem;
+  color: #2b92e4;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px;
+}
+
+.container section.login_page .form_page .message, .container section.signup_page .form_page .message {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.login_page .form_page .message h1, .container section.signup_page .form_page .message h1 {
+  color: gray;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+.container section.login_page .form_page .message a, .container section.signup_page .form_page .message a {
+  font-size: 1.4rem;
+  color: #2b92e4;
+}
+
+.container section.login_page .form_page form, .container section.signup_page .form_page form {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container section.login_page .form_page form ul li, .container section.signup_page .form_page form ul li {
+  color: #2b92e4;
+}
+
+.container section.login_page .form_page form p, .container section.signup_page .form_page form p {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+.container section.login_page .form_page form p label, .container section.signup_page .form_page form p label {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+}
+
+.container section.login_page .form_page form p input[type=password], .container section.login_page .form_page form p input[type=text], .container section.login_page .form_page form p input[type=email], .container section.signup_page .form_page form p input[type=password], .container section.signup_page .form_page form p input[type=text], .container section.signup_page .form_page form p input[type=email] {
+  height: 40px;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #2b92e4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.login_page .form_page form button, .container section.signup_page .form_page form button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 40px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #2b92e4;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.login_page .form_page form button:hover, .container section.signup_page .form_page form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container section.login_page .form_page .not_a_user, .container section.signup_page .form_page .not_a_user {
+  width: inherit;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container section.login_page .form_page .not_a_user p, .container section.signup_page .form_page .not_a_user p {
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.container section.login_page .form_page .not_a_user a, .container section.signup_page .form_page .not_a_user a {
+  font-size: 1.2rem;
+  color: #2b92e4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.signup_page {
+  min-height: 170vh;
+  height: auto;
+}
+
+.container section.signup_page .form_page {
+  top: 5%;
+  -webkit-transform: translate(-50%, 5%);
+          transform: translate(-50%, 5%);
+}
+
+.container section.group_page {
+  width: inherit;
+  height: auto;
+  min-height: calc(100vh - 70px);
+}
+
+.container section.group_page .create {
+  width: inherit;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container section.group_page .create h1 {
+  font-size: 2.5rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .create input[type=text] {
+  width: 60%;
+  height: 40px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+}
+
+.container section.group_page .create ::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .create :-ms-input-placeholder {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .create ::-ms-input-placeholder {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .create ::placeholder {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .create button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 40px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #2b92e4;
+  cursor: pointer;
+  background: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container section.group_page .your_group {
+  width: inherit;
+  height: auto;
+  margin-top: 30px;
+}
+
+.container section.group_page .your_group h1 {
+  font-size: 2.5rem;
+  color: gray;
+}
+
+.container section.group_page .your_group ul {
+  width: inherit;
+  height: auto;
+  padding-left: 50px;
+  margin-top: 30px;
+  color: #2b92e4;
+}
+
+.container section.group_page .your_group ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #2b92e4;
+}
+
+section.chatSection {
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+section.chatSection .heading {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  text-align: end;
+}
+
+section.chatSection .heading h1 {
+  font-size: 2rem;
+  color: #2b92e4;
+  padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.chatSection .chatbox {
+  width: 90%;
+  height: 350px;
+  margin: auto;
+  border: 1px solid #2b92e4;
+  padding: 20px 20px;
+  overflow-y: scroll;
+}
+
+section.chatSection .chatbox .user_message, section.chatSection .chatbox .other_message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+section.chatSection .chatbox .user_message h2, section.chatSection .chatbox .other_message h2 {
+  font-size: 1.4rem;
+  max-width: 150px;
+  background-color: #dddbdb;
+  padding: 12px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.chatSection .chatbox .user_message span, section.chatSection .chatbox .other_message span {
+  font-size: 1rem;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.chatSection .chatbox .user_message {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.chatSection .chatbox .user_message span {
+  padding-left: 5px;
+}
+
+section.chatSection .chatbox .other_message {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section.chatSection .chatbox .other_message span {
+  padding-right: 5px;
+}
+
+section.chatSection .send_message {
+  width: 90%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+section.chatSection .send_message input[type=text] {
+  width: 85%;
+  height: inherit;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  outline: none;
+  border: 1px solid #2b92e4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.chatSection .send_message input[type=button] {
+  width: 15%;
+  height: inherit;
+  background-color: #2b92e4;
+  color: white;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #2b92e4;
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
